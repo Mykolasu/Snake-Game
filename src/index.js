@@ -1,6 +1,7 @@
-import { Application } from "pixi.js";
+// import { Application } from "pixi.js";
 import { Game } from "./Game";
 
+const { Application } = PIXI;
 (async () => {
     const gridSize = 20;
     const gridCount = 20;

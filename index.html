@@ -4,10 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Game snake</title>
-    <link rel="stylesheet" href="/styles.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/8.5.2/pixi.min.js"></script>
-    <style>
-    </style>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script type="module" src="./src/index.js"></script>
   </head>
   <body>
     <div id="game-container">
@@ -22,14 +20,14 @@
           <label><input type="checkbox" id="classic" checked /> Classic</label>
           <label><input type="checkbox" id="no-die" /> No Die</label>
           <label><input type="checkbox" id="speed" /> Speed</label>
-          <p style="color: rgba(218, 199, 29, 0.74); font-size: small;">WARNING! Choose speed mode only together with another game mode</p>
+          <p style="color: rgba(218, 199, 29, 0.74); font-size: small">
+            WARNING! Choose speed mode only together with another game mode
+          </p>
         </div>
         <div class="controls">
           <button id="play-button">Play</button>
-          <!-- <button id="exit-button">Exit</button> -->
         </div>
       </div>
     </div>
-    <script type="module" src="/src/index.js"></script>
   </body>
 </html>

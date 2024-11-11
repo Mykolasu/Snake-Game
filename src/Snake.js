@@ -35,6 +35,5 @@ export class Snake {
         this.direction = { x: -1, y: 0 };
       if (key === "ArrowRight" && this.direction.x === 0)
         this.direction = { x: 1, y: 0 };
-      console.log("New direction:", this.direction);
     }
   }

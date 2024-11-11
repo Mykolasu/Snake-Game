@@ -1,6 +1,6 @@
-import { Snake } from "./Snake";
-import { Food } from "./Food";
-import { GameRenderer } from "./GameRenderer";
+import { Snake } from "./Snake.js";
+import { Food } from "./Food.js";
+import { GameRenderer } from "./GameRenderer.js";
 
 export class Game {
   constructor(app) {
@@ -72,7 +72,7 @@ export class Game {
     const newHead = this.snake.move();
 
     const collision = this.isCollision(newHead);
-    console.log("Collision?", collision);
+    // console.log("Collision?", collision);
 
     if (this.gameMode === "classic" && collision) {
       this.gameOver = true;

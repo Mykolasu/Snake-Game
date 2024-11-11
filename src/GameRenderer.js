@@ -1,4 +1,4 @@
-import { Graphics } from "pixi.js";
+import { Graphics } from './pixi/pixi.mjs';
 
 export class GameRenderer {
     constructor(app, gridSize) {

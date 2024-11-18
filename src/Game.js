@@ -43,6 +43,8 @@ export class Game {
     const immortalMode = document.getElementById("no-die").checked;
     const speedMode = document.getElementById("speed").checked;
 
+    document.getElementById("main-title").textContent = "Snake Game";
+
     // Ensure at least one mode is selected
     if (!classicMode && !immortalMode && !speedMode) {
       console.warn("Select at least one game mode.");
@@ -77,7 +79,8 @@ export class Game {
     if (this.gameMode === "classic" && collision) {
       this.gameOver = true;
       this.app.ticker.stop(); // Stop game on collision
-      console.log("Game over!");
+      // console.log("Game over!");
+      document.getElementById("main-title").textContent = "Game over!";
       this.updateBestScore();
       return;
     }
